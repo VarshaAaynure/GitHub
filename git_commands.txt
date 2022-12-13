@@ -1,0 +1,13 @@
+*To check details
+git config --list
+git config --get user.name
+ 
+git config --global user.emil "yourGmailId@gmail.com" 
+
+git config --global user.password "1234321"
+#To save the credentials forever
+git config --global credential.helper store
+
+git config --global --unset user.name
+git config --global --unset user.email
+git config --global --unset credential.helper
