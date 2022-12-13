@@ -51,6 +51,6 @@ $ git status
 On branch master
 nothing to commit, working tree clean
 
-
+$ git remote add origin https://github.com/VarshaAaynure/GitHub.git
 
 
