@@ -1,0 +1,42 @@
+To add and commit we can use.
+$ git commit -am “<message>”
+
+Un-stage and Rename File
+eg.: git mv filetodelete.txt keepfile.txt.
+• The way we stage a file to track, the same way we can upstage the file to untrack.
+eg.: git reset HEAD filename.txt
+
+Branch or Tag ?
+• Branch is something like a separate thread
+• Whereas Tag is like a Label.
+• Assume you have stable release with some bug fixes say v1.0 :-
+• This version fixes bug123
+• This version fixes bug456
+• This is final v1.0
+This represents state of code.
+Use Tags to mark release points
+
+Tagging
+• List all tags:-
+• Creating tag with inline message:-
+• Creating tag for longer message:-
+➢ git tag
+➢ git tag –l “v1.3.1*” → tags with particular pattern
+➢ git tag v1.0 –m "Tagging version 1.0"
+➢ git tag –a v1.0 → opens default editor for longer message
+
+Stashing
+• While resolving a bug on some branch, say we have got some high priority task
+• We can't commit coz its half done, we can't discard otherwise, rework.
+• Then how should we 
+handle this messy state 
+of work?
+• We have Stash
+to store temporarily
+
+Stashing
+• Stashing is dirty state of working directory.
+• i.e. modified tracked files and staged changes – and saves it on stack of unfinished changes that we can reapply at anytime.
+➢ git stash → saves working dir to stash
+➢ git stash list → show all stash
+➢ git stash apply →reapply recent stash
