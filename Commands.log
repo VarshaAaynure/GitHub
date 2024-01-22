@@ -1,3 +1,21 @@
+# Connect you local repo to remote repo using this below command 
+git remote add origin [here add your gitHub web url]
+
+#Command to push your local repo to remote repo
+git push origin master
+
+#Command that get used to rename files
+git mv 
+
+# Command to revert git commit
+git revert <commit_id>
+
+# 
+git fetch origin 
+#or 
+git fetch --all
+
+git diff-tree -r <commit-id>
 git version
 git help
 
